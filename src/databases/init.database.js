@@ -3,10 +3,10 @@ import mysql from "mysql";
 // Création d'un gestionnaire (ou pool) de connexions à la base de données MySQL
 const pool = mysql.createPool({
   connectionLimit: 10000,
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "danse",
+  host: DB_HOST,
+  user: DB_USER,
+  password: DB_PASS,
+  database: DB_NAME,
 });
 
 // Fonction pour exécuter une requête SQL
