@@ -34,3 +34,5 @@ initRoutes(app);
 app.listen(PORT, () => {
   console.log("Le serveur écoute sur le PORT:", PORT);
 });
+
+export default app;
