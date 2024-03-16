@@ -19,7 +19,7 @@ const initUserRoutes = (app) => {
   router.get("/test", UserController.test);
 
   // Utilisation du routeur dans l'application avec le préfixe "/users"
-  app.use("/users", router);
+  app.use("/api/users", router);
 };
 
 export default initUserRoutes;
