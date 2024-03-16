@@ -4,26 +4,8 @@ import initMiddlewares from "./middlewares/init.middleware.js";
 
 // Création de l'application Express
 const app = express();
-const PORT = 3000;
-const cors = require("cors");
+const PORT = 5000;
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      const allowedOrigins = [
-        "https://front-xi-wheat.vercel.app",
-        "https://frontend-iyg3.vercel.app",
-      ];
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    optionsSuccessStatus: 200,
-    credentials: true,
-  })
-);
 // Initialisation des middlewares (gestionnaires intermédiaires)
 initMiddlewares(app);
 
