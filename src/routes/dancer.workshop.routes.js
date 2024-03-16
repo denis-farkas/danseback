@@ -33,7 +33,7 @@ const initDancerWorkshopRoutes = (app) => {
   );
 
   // Utilisation du routeur dans l'application avec le préfixe "/dancer_workshop"
-  app.use("/dancer_workshop", router);
+  app.use("/api/dancer_workshop", router);
 };
 
 export default initDancerWorkshopRoutes;
